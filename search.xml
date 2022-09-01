@@ -74,9 +74,9 @@
       
         <tags>
             
-            <tag> Stream </tag>
-            
             <tag> Java </tag>
+            
+            <tag> Stream </tag>
             
         </tags>
       
@@ -131,6 +131,31 @@
             <tag> Java </tag>
             
             <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux 防火墙常见操作命令</title>
+      <link href="/2018/09/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99%E6%93%8D%E4%BD%9C/"/>
+      <url>/2018/09/23/Linux%E9%98%B2%E7%81%AB%E5%A2%99%E6%93%8D%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Linux-防火墙操作"><a href="#Linux-防火墙操作" class="headerlink" title="Linux 防火墙操作"></a>Linux 防火墙操作</h3><h5 id="查看防火墙状态"><a href="#查看防火墙状态" class="headerlink" title="查看防火墙状态"></a>查看防火墙状态</h5><p>systemctl status firewalld</p><h5 id="开启防火墙"><a href="#开启防火墙" class="headerlink" title="开启防火墙"></a>开启防火墙</h5><p>systemctl start firewalld</p><h5 id="关闭防火墙"><a href="#关闭防火墙" class="headerlink" title="关闭防火墙"></a>关闭防火墙</h5><p>systemctl stop firewalld</p><h5 id="永久关闭防火墙"><a href="#永久关闭防火墙" class="headerlink" title="永久关闭防火墙"></a>永久关闭防火墙</h5><p>systemctl disabled firewalld</p><h5 id="开放指定端口"><a href="#开放指定端口" class="headerlink" title="开放指定端口"></a>开放指定端口</h5><p>firewall-cmd –zone&#x3D;public –add-port&#x3D;8080&#x2F;tcp –permanent </p><p> 命令含义： –zone #作用域</p><p> –add-port&#x3D;8080&#x2F;tcp  #添加端口，格式为：端口&#x2F;通讯协议</p><p> –permanent  #永久生效，没有此参数重启后失效</p><h5 id="关闭指定端口"><a href="#关闭指定端口" class="headerlink" title="关闭指定端口"></a>关闭指定端口</h5><p>firewall-cmd –zone&#x3D;public –remove-port&#x3D;8080&#x2F;tcp –permanent</p><h5 id="查看开放的端口"><a href="#查看开放的端口" class="headerlink" title="查看开放的端口"></a>查看开放的端口</h5><p>firewall-cmd –zone&#x3D;public –list-ports</p><h5 id="重新加载防火墙配置"><a href="#重新加载防火墙配置" class="headerlink" title="重新加载防火墙配置"></a>重新加载防火墙配置</h5><p>      firewall-cmd –reload</p><h5 id="查看端口号"><a href="#查看端口号" class="headerlink" title="查看端口号"></a>查看端口号</h5><p>netstat -ntlp   &#x2F;&#x2F;查看当前所有tcp端口·</p><p>netstat -ntulp |grep 8080 &#x2F;&#x2F;查看所有8080端口使用情况·</p><p>lsof -i:8080 </p><h5 id="查看进程信息"><a href="#查看进程信息" class="headerlink" title="查看进程信息"></a>查看进程信息</h5><p>ps -ef |grep tomcat</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
             
         </tags>
       
