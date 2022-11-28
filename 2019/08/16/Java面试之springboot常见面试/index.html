@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Java SpringBoot常见面试问题 | KeJiu</title><meta name="keywords" content="Java,Java面试题"><meta name="author" content="张可久"><meta name="copyright" content="张可久"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="常见SpringBoot面试问题1.介绍下SpringBoot答： Spring Boot就是一个java web的开发框架，与 MVC类似，对比其他java web框架的好处，官方说是简化开发，约定大于配置， you can “just run”，能迅速的开发web应用，几行代码开发一个http接口。SpringBoot它是基于Spring创建的一个上层应用级框架。从14年发布1.0版本 ，17">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java SpringBoot常见面试问题">
+<meta property="og:url" content="https://kejiu.imxt.xyz/2019/08/16/Java%E9%9D%A2%E8%AF%95%E4%B9%8Bspringboot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95/index.html">
+<meta property="og:site_name" content="KeJiu">
+<meta property="og:description" content="常见SpringBoot面试问题1.介绍下SpringBoot答： Spring Boot就是一个java web的开发框架，与 MVC类似，对比其他java web框架的好处，官方说是简化开发，约定大于配置， you can “just run”，能迅速的开发web应用，几行代码开发一个http接口。SpringBoot它是基于Spring创建的一个上层应用级框架。从14年发布1.0版本 ，17">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://kejiu.imxt.xyz/img/20.jpg">
+<meta property="article:published_time" content="2019-08-16T05:24:32.000Z">
+<meta property="article:modified_time" content="2022-08-27T04:04:53.177Z">
+<meta property="article:author" content="张可久">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Java面试题">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kejiu.imxt.xyz/img/20.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kejiu.imxt.xyz/2019/08/16/Java%E9%9D%A2%E8%AF%95%E4%B9%8Bspringboot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 张可久","link":"链接: ","source":"来源: KeJiu","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Java SpringBoot常见面试问题',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-27 12:04:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 博客</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/20.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">KeJiu</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 博客</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Java SpringBoot常见面试问题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2019-08-16T05:24:32.000Z" title="发表于 2019-08-16 13:24:32">2019-08-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Java%E9%9D%A2%E8%AF%95%E9%A2%98/">Java面试题</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">964</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Java SpringBoot常见面试问题"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="常见SpringBoot面试问题"><a href="#常见SpringBoot面试问题" class="headerlink" title="常见SpringBoot面试问题"></a>常见SpringBoot面试问题</h3><h4 id="1-介绍下SpringBoot"><a href="#1-介绍下SpringBoot" class="headerlink" title="1.介绍下SpringBoot"></a>1.介绍下SpringBoot</h4><p>答： Spring Boot就是一个java web的开发框架，与 MVC类似，对比其他java web框架的好处，官方说是简化开发，约定大于配置， you can “just run”，能迅速的开发web应用，几行代码开发一个http接口。SpringBoot它是基于Spring创建的一个上层应用级框架。从14年发布1.0版本 ，17年发布2.0版本。它比以前那种SSSM框架，基于配置的开发更为高效</p>
+<h4 id="2-SpringBoot有哪些优点"><a href="#2-SpringBoot有哪些优点" class="headerlink" title="2.SpringBoot有哪些优点"></a>2.SpringBoot有哪些优点</h4><p>答：</p>
+<p>• 独立运行，内嵌式容器简化Web项目<br>• 开箱即用，提供各种默认配置来简化项目配置<br>•   自动配置<br>• 没有冗余代码生成和XML配置</p>
+<p>• 自带Actuator应用监控</p>
+<h4 id="3-SpringBoot中核心注解"><a href="#3-SpringBoot中核心注解" class="headerlink" title="3.SpringBoot中核心注解"></a>3.SpringBoot中核心注解</h4><p>答：</p>
+<p>1.<strong>@SpringBootApplication</strong></p>
+<p>它是一个组合注解.里面包含@SpringBootConfiguration  ，@EnableAutoConfiguration ，@ComponentScan 三个注解</p>
+<p>2.<strong>@ComponentScan</strong></p>
+<p>自动扫描当前包及子包下被@Component，@Controller，@Service，@Repository注解标记的Java类，将其作为bean加载到IOC容器中。  不指定范围则默认从注解所在类的包下进行扫描。</p>
+<p>3.<strong>@SpringBootConfiguration</strong><br>组合了@Configuration注解，即被SpringBootApplication标记的类是个Java配置类</p>
+<p>SpringBoot使用Java Config技术进行配置，Java Config使用注解和Java代码的方式代替xml配置文件</p>
+<p>任何一个标注了@Configuration的Java类定义都是一个JavaConfig配置类。<br>任何一个标注了@Bean的方法，其返回值将作为一个bean定义注册到Spring的IoC容器，方法名将默认成该bean定义的id。</p>
+<p>4.<strong>@EnableAutoConfiguration</strong></p>
+<p>打开自动装配功能， SpringBoot根据META-INF&#x2F;spring.factories文件里加载需要自动注入的java类</p>
+<h4 id="4-SpringBoot自动装配原理"><a href="#4-SpringBoot自动装配原理" class="headerlink" title="4.SpringBoot自动装配原理"></a>4.SpringBoot自动装配原理</h4><p>答：</p>
+<p>在启动SpringBoot项目的main方法的头部有一个@SpringBootApplication注解，在这个注解中组合一个EnableAutoConfiguration注解，此注解的是打开自动装配功能，此注解里又包含了一个@Import注解。在注解中引入了AutoConfigurationImportSelector类，在此类里的selectImports方法会读取META-INF&#x2F;spring.factories文件里需要被自动装配的所有配置类，然后通过META-INF下面的spring-autoconfigure-metadata.properties文件做条件过滤。最后返回的就是需要自动装配的相关对象</p>
+<h4 id="5-SpringBoot的starter"><a href="#5-SpringBoot的starter" class="headerlink" title="5.SpringBoot的starter"></a>5.SpringBoot的starter</h4><p>答：</p>
+<p>starter的作用是在META-INF目录下提供了一个spring.factories文件，在文件中我们添加了一个需要注入到Spring容器中的对应配置类。比如 第三方的框架要整合到SpringBoot项目中，也就是需要把第三方框架的核心组件注入到Spring容器中，提供的方式就是spring.factories文件</p>
+<p>starter也可以理解为一个启动器</p>
+<h4 id="6-SpringBoot项目需要单独的Web容器吗"><a href="#6-SpringBoot项目需要单独的Web容器吗" class="headerlink" title="6.SpringBoot项目需要单独的Web容器吗"></a>6.SpringBoot项目需要单独的Web容器吗</h4><p>答：不需要，SpringBoot项目会添加spring-boot-starter-web依赖，此依赖里内嵌了tomcat容器。可以直接运行启动。</p>
+<h4 id="7-SpringBoot常用的starter"><a href="#7-SpringBoot常用的starter" class="headerlink" title="7.SpringBoot常用的starter"></a>7.SpringBoot常用的starter</h4><p>答：</p>
+<p>spring-boot-starter-web 提供了SpringMVC 和内嵌tomcat容器</p>
+<p>spring-boot-starter-data-jpa 提供了SpringJPA和Hibernate</p>
+<p>spring-boot-starter-redis  提供了redis服务</p>
+<p>mybatis-spring-boot-starter 提供了mybatis框架操作</p>
+<p>等</p>
+<h4 id="8-SpringBoot项目启动方式"><a href="#8-SpringBoot项目启动方式" class="headerlink" title="8.SpringBoot项目启动方式"></a>8.SpringBoot项目启动方式</h4><p>答：</p>
+<ol>
+<li><p>通过main方法运行</p>
+</li>
+<li><p>打成jar 通过 java -jar 命令运行  或者打成war包 放在web容器运行</p>
+</li>
+<li><p>使用Maven&#x2F;Gradle插件运行</p>
+</li>
+</ol>
+<p>  </p>
+<h4 id="9-SpringBoot项目跨域问题"><a href="#9-SpringBoot项目跨域问题" class="headerlink" title="9.SpringBoot项目跨域问题"></a>9.SpringBoot项目跨域问题</h4><p>答：</p>
+<p>1.可以通过JSONP类解决跨域问题，但只支持GET方式请求</p>
+<p>2.SpringBoot中可以实现WebMvcConfigurer接口 重写其addCorsMappings方法，在这个方法中我们添加允许跨域相关的请求</p>
+<h4 id="10-SpringBoot项目使用log4j"><a href="#10-SpringBoot项目使用log4j" class="headerlink" title="10.SpringBoot项目使用log4j"></a>10.SpringBoot项目使用log4j</h4><p>答：</p>
+<p>在springboot项目中默认提供 了 日志框架LogBack 所以我们如果需要引入log4j的话，必须先排查logback的依赖 然后再添加log4j的依赖，然后在src&#x2F;main&#x2F;resources目录下创建log4j.proerties文件，然后就可以进行日志的相关配置</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://kejiu.imxt.xyz">张可久</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kejiu.imxt.xyz/2019/08/16/Java%E9%9D%A2%E8%AF%95%E4%B9%8Bspringboot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95/">https://kejiu.imxt.xyz/2019/08/16/Java%E9%9D%A2%E8%AF%95%E4%B9%8Bspringboot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kejiu.imxt.xyz" target="_blank">KeJiu</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Java/">Java</a><a class="post-meta__tags" href="/tags/Java%E9%9D%A2%E8%AF%95%E9%A2%98/">Java面试题</a></div><div class="post_share"></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/pay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/pay.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/04/18/Mysql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/"><img class="prev-cover" src="/img/19.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">MySql 主从复制</div></div></a></div><div class="next-post pull-right"><a href="/2019/08/14/Ngnix%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/"><img class="next-cover" src="/img/11.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Linux下 安装Ngnix方法及配置</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2018/09/14/Java%E4%B9%8BLocalDate%E4%B8%8EDate%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/" title="Java LocalDate与Date相互转换"><img class="cover" src="/img/11.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-09-14</div><div class="title">Java LocalDate与Date相互转换</div></div></a></div><div><a href="/2018/09/24/Java%E4%B9%8B%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95%E9%80%92%E5%BD%92%E5%92%8C%E8%BF%AD%E4%BB%A3%E6%B1%82%E8%8F%B2%E6%B3%A2%E9%82%A3%E5%88%87%E6%95%B0%E5%88%97%E5%80%BC/" title="Java 菲波那切数列之递归迭代算法求值"><img class="cover" src="/img/19.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-09-24</div><div class="title">Java 菲波那切数列之递归迭代算法求值</div></div></a></div><div><a href="/2019/03/21/Java%E4%B9%8BStream%E6%B5%81%E5%BC%8F%E5%A4%84%E7%90%86%E9%9B%86%E5%90%88-%E5%8E%BB%E9%87%8D%E6%8E%92%E5%BA%8F%E5%88%86%E7%BB%84%E8%BD%AC%E6%8D%A2%E6%93%8D%E4%BD%9C/" title="Java Stream流式处理集合-去重排序分组转换操作"><img class="cover" src="/img/19.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-21</div><div class="title">Java Stream流式处理集合-去重排序分组转换操作</div></div></a></div><div><a href="/2018/08/21/Java%E4%B9%8B%E5%B8%B8%E8%A7%81%E7%AE%97%E6%B3%95%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="Java 算法之二分查找"><img class="cover" src="/img/9.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-08-21</div><div class="title">Java 算法之二分查找</div></div></a></div><div><a href="/2019/03/24/Java%E4%B9%8B%E7%94%9F%E6%88%90%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E7%BB%93%E6%9E%84%E6%96%87%E6%A1%A3/" title="Java  生成数据库表结构文档"><img class="cover" src="/img/7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-03-24</div><div class="title">Java  生成数据库表结构文档</div></div></a></div><div><a href="/2018/08/10/%E3%80%90Java%E3%80%91%E6%89%93%E5%8D%B0%E4%B8%A4%E6%97%B6%E9%97%B4%E6%AE%B5%E6%89%80%E6%9C%89%E6%97%A5%E6%9C%9F%E6%96%B9%E6%B3%95/" title="Java 打印两时间段所有日期方法"><img class="cover" src="/img/11.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2018-08-10</div><div class="title">Java 打印两时间段所有日期方法</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">张可久</div><div class="author-info__description">温故而知新</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">18</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" href="mailto:2440778826@qq.com"><i class="fab fa-email"></i><span>Email To Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">归雁横秋，倦客思家。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81SpringBoot%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">常见SpringBoot面试问题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%BB%8B%E7%BB%8D%E4%B8%8BSpringBoot"><span class="toc-number">1.1.</span> <span class="toc-text">1.介绍下SpringBoot</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-SpringBoot%E6%9C%89%E5%93%AA%E4%BA%9B%E4%BC%98%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text">2.SpringBoot有哪些优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-SpringBoot%E4%B8%AD%E6%A0%B8%E5%BF%83%E6%B3%A8%E8%A7%A3"><span class="toc-number">1.3.</span> <span class="toc-text">3.SpringBoot中核心注解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-SpringBoot%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D%E5%8E%9F%E7%90%86"><span class="toc-number">1.4.</span> <span class="toc-text">4.SpringBoot自动装配原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-SpringBoot%E7%9A%84starter"><span class="toc-number">1.5.</span> <span class="toc-text">5.SpringBoot的starter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-SpringBoot%E9%A1%B9%E7%9B%AE%E9%9C%80%E8%A6%81%E5%8D%95%E7%8B%AC%E7%9A%84Web%E5%AE%B9%E5%99%A8%E5%90%97"><span class="toc-number">1.6.</span> <span class="toc-text">6.SpringBoot项目需要单独的Web容器吗</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-SpringBoot%E5%B8%B8%E7%94%A8%E7%9A%84starter"><span class="toc-number">1.7.</span> <span class="toc-text">7.SpringBoot常用的starter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-SpringBoot%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8%E6%96%B9%E5%BC%8F"><span class="toc-number">1.8.</span> <span class="toc-text">8.SpringBoot项目启动方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-SpringBoot%E9%A1%B9%E7%9B%AE%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98"><span class="toc-number">1.9.</span> <span class="toc-text">9.SpringBoot项目跨域问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#10-SpringBoot%E9%A1%B9%E7%9B%AE%E4%BD%BF%E7%94%A8log4j"><span class="toc-number">1.10.</span> <span class="toc-text">10.SpringBoot项目使用log4j</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/09/01/RabbitMQ%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" title="RabbitMq 消息队列"><img src="/img/12.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="RabbitMq 消息队列"/></a><div class="content"><a class="title" href="/2022/09/01/RabbitMQ%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" title="RabbitMq 消息队列">RabbitMq 消息队列</a><time datetime="2022-09-01T13:40:29.000Z" title="发表于 2022-09-01 21:40:29">2022-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/04/18/Mysql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/" title="MySql 主从复制"><img src="/img/19.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySql 主从复制"/></a><div class="content"><a class="title" href="/2020/04/18/Mysql%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/" title="MySql 主从复制">MySql 主从复制</a><time datetime="2020-04-18T07:20:16.000Z" title="发表于 2020-04-18 15:20:16">2020-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/08/16/Java%E9%9D%A2%E8%AF%95%E4%B9%8Bspringboot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95/" title="Java SpringBoot常见面试问题"><img src="/img/20.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Java SpringBoot常见面试问题"/></a><div class="content"><a class="title" href="/2019/08/16/Java%E9%9D%A2%E8%AF%95%E4%B9%8Bspringboot%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95/" title="Java SpringBoot常见面试问题">Java SpringBoot常见面试问题</a><time datetime="2019-08-16T05:24:32.000Z" title="发表于 2019-08-16 13:24:32">2019-08-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/08/14/Ngnix%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/" title="Linux下 安装Ngnix方法及配置"><img src="/img/11.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux下 安装Ngnix方法及配置"/></a><div class="content"><a class="title" href="/2019/08/14/Ngnix%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/" title="Linux下 安装Ngnix方法及配置">Linux下 安装Ngnix方法及配置</a><time datetime="2019-08-14T05:53:16.000Z" title="发表于 2019-08-14 13:53:16">2019-08-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2019/06/15/%E3%80%90Java%E3%80%91%E8%8E%B7%E5%8F%96%E6%8A%96%E9%9F%B3%E5%88%86%E4%BA%AB%E6%97%A0%E5%8D%B0%E8%A7%86%E9%A2%91/" title="HtmlUnit 获取抖音无印视频"><img src="/img/12.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HtmlUnit 获取抖音无印视频"/></a><div class="content"><a class="title" href="/2019/06/15/%E3%80%90Java%E3%80%91%E8%8E%B7%E5%8F%96%E6%8A%96%E9%9F%B3%E5%88%86%E4%BA%AB%E6%97%A0%E5%8D%B0%E8%A7%86%E9%A2%91/" title="HtmlUnit 获取抖音无印视频">HtmlUnit 获取抖音无印视频</a><time datetime="2019-06-15T05:25:52.000Z" title="发表于 2019-06-15 13:25:52">2019-06-15</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/20.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2022 By 张可久</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
